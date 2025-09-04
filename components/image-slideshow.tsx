@@ -67,6 +67,20 @@ export function ImageSlideshow({ images, autoPlay = true, interval = 4000 }: Ima
           />
         ))}
       </div>
+
+      {/* Navigation Buttons */}
+      <button
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2"
+        onClick={goToPrevious}
+      >
+        &lt;
+      </button>
+      <button
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2"
+        onClick={goToNext}
+      >
+        &gt;
+      </button>
     </div>
   )
 }

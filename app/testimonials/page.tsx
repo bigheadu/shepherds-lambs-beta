@@ -70,7 +70,13 @@ export default function TestimonialsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto" />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6933bdd4-07b6-4d4d-8946-51a0cef27b6d-XqyqAd0mZ6c5hmJNJAYEXSTp07DbHX.png"
+                alt="Shepherd's Lambs"
+                width={160}
+                height={80}
+                className="h-12 w-auto"
+              />
             </div>
 
             <nav className="hidden md:flex space-x-8">
@@ -133,19 +139,7 @@ export default function TestimonialsPage() {
                   <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.content}"</p>
 
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <Image
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        width={48}
-                        height={48}
-                        className="rounded-full mr-3"
-                      />
-                      <div>
-                        <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                        <p className="text-sm text-gray-600">{testimonial.role}</p>
-                      </div>
-                    </div>
+                    
 
                     <div className="flex">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -170,7 +164,11 @@ export default function TestimonialsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3">Share Your Testimonial</Button>
-            <Button variant="outline" className="border-gray-700 text-gray-700 hover:bg-gray-100 px-8 py-3" asChild>
+            <Button
+              variant="outline"
+              className="border-gray-700 text-gray-700 hover:bg-gray-100 px-8 py-3 bg-transparent"
+              asChild
+            >
               <Link href="/contact-us">Contact Us</Link>
             </Button>
           </div>
@@ -183,9 +181,16 @@ export default function TestimonialsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
-              <div className="flex items-center mb-6">
-                <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto mr-4" />
-                <h3 className="text-2xl font-bold">Shepherd's Lambs</h3>
+              <div className="flex flex-col items-center mb-6">
+                <div className="bg-white p-3 rounded-lg mb-2">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Shepherd%27s%20Lambs-ZAqg6BezIJIpZGhRZFjGwed9QBNDSx.png"
+                    alt="Shepherd's Lambs"
+                    width={200}
+                    height={100}
+                    className="w-48 h-auto"
+                  />
+                </div>
               </div>
               <p className="text-gray-300 mb-4">
                 Shepherd's Lambs is a 501(c)(3) non-profit organization committed to serving youths in southern Orange
@@ -233,8 +238,7 @@ export default function TestimonialsPage() {
                 <Button className="bg-gray-500 hover:bg-gray-600 text-white font-semibold px-6">Subscribe</Button>
               </div>
               <p className="text-gray-300 text-sm">
-                Join us to make a difference! Subscribe to our newsletter to stay informed about our humanitarian
-                organization.
+                Join us to make a difference! Subscribe to our newsletter to stay informed about our organization.
               </p>
             </div>
           </div>

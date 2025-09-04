@@ -15,7 +15,13 @@ export default function CareerPage({ searchParams }: { searchParams?: { success?
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto" />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6933bdd4-07b6-4d4d-8946-51a0cef27b6d-XqyqAd0mZ6c5hmJNJAYEXSTp07DbHX.png"
+                alt="Shepherd's Lambs"
+                width={160}
+                height={80}
+                className="h-12 w-auto"
+              />
             </div>
 
             <nav className="hidden md:flex space-x-8">
@@ -86,7 +92,7 @@ export default function CareerPage({ searchParams }: { searchParams?: { success?
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We're always looking for dedicated, caring people who want to make a positive difference, particularly
               with the Special Needs community. Please tell us a little bit about yourself and your interests and why
-              you'd be a good fit for Shepherd's Lambs and we'll be in contact. Thank you for your interest!
+              you'd be a good fit for Shepherd's Lambs and we'll be in touch. Thank you for your interest!
             </p>
           </div>
 
@@ -165,9 +171,17 @@ export default function CareerPage({ searchParams }: { searchParams?: { success?
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
-              <div className="flex items-center mb-6">
-                <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto mr-4" />
-                <h3 className="text-2xl font-bold">Shepherd's Lambs</h3>
+              <div className="flex flex-col items-center mb-6">
+                <div className="bg-white p-3 rounded-lg mb-2">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Shepherd%27s%20Lambs-ZAqg6BezIJIpZGhRZFjGwed9QBNDSx.png"
+                    alt="Shepherd's Lambs"
+                    width={200}
+                    height={100}
+                    className="w-48 h-auto"
+                  />
+                </div>
+                
               </div>
               <p className="text-gray-300 mb-4">
                 Shepherd's Lambs is a 501(c)(3) non-profit organization committed to serving youths in southern Orange
@@ -215,8 +229,7 @@ export default function CareerPage({ searchParams }: { searchParams?: { success?
                 <Button className="bg-gray-500 hover:bg-gray-600 text-white font-semibold px-6">Subscribe</Button>
               </div>
               <p className="text-gray-300 text-sm">
-                Join us to make a difference! Subscribe to our newsletter to stay informed about our humanitarian
-                organization.
+                Join us to make a difference! Subscribe to our newsletter to stay informed about our organization.
               </p>
             </div>
           </div>

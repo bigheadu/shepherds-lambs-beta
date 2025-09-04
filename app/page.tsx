@@ -21,6 +21,10 @@ export default function AboutUsPage() {
       src: "/images/slideshow/swimming-pool.jpg",
       alt: "A child celebrating in the swimming pool with arms raised, showing pure happiness and achievement",
     },
+    {
+      src: "/images/slideshow/father-child-celebration.jpg",
+      alt: "A joyful moment of celebration with a child on an adult's shoulders, both with arms raised in triumph, representing the supportive relationships fostered by Shepherd's Lambs",
+    },
   ]
 
   return (
@@ -29,7 +33,13 @@ export default function AboutUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto" />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6933bdd4-07b6-4d4d-8946-51a0cef27b6d-XqyqAd0mZ6c5hmJNJAYEXSTp07DbHX.png"
+                alt="Shepherd's Lambs"
+                width={160}
+                height={80}
+                className="h-12 w-auto"
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-900 font-medium">
@@ -84,8 +94,7 @@ export default function AboutUsPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">About Shepherd's Lambs</h1>
               <p className="text-xl text-gray-700 mb-8">
-                Shepherd's Lambs serves youths in southern Orange County. Our staff is educated and experienced in
-                neurodegenerative respite care.
+                We serve youths in southern Orange County. Our staff is educated and experienced in neurodegenerative respite care. Shepherd's Lambs encompasses the Servant Leader mindset; we serve so that your child grows to become wiser, healthier and more autonomous.              
               </p>
             </div>
           </div>
@@ -116,17 +125,17 @@ export default function AboutUsPage() {
         {/* Our Team Section */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Team</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 className="text-3xl font-bold mb-12 text-center">Leadership</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Team Member 1 */}
               <div className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full bg-gray-100">
                   <Image
                     src="/images/team-member.png"
                     alt="Team Member"
-                    width={200}
-                    height={200}
-                    className="object-cover w-full h-full"
+                    width={192}
+                    height={192}
+                    className="object-cover object-center w-full h-full"
                   />
                 </div>
                 <h3 className="text-xl font-semibold">Mary Frances Kirkpatrick</h3>
@@ -139,38 +148,58 @@ export default function AboutUsPage() {
 
               {/* Team Member 2 */}
               <div className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full bg-gray-100">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
-                    alt="Team Member"
-                    width={200}
-                    height={200}
-                    className="object-cover w-full h-full"
+                    src="/images/ulrika-marmolin-updated.jpg"
+                    alt="Ulrika Marmolin"
+                    width={192}
+                    height={192}
+                    className="object-cover object-center w-full h-full"
                   />
                 </div>
-                <h3 className="text-xl font-semibold">John Smith</h3>
-                <p className="text-gray-600 mb-2">Program Director</p>
+                <h3 className="text-xl font-semibold">Ulrika Marmolin</h3>
+                <p className="text-gray-600 mb-2">Respite Youth Care</p>
                 <p className="text-gray-500 text-sm max-w-xs mx-auto">
-                  John brings a wealth of knowledge in special education and program development to our organization.
+                  Ulrika ensures that our clients receive personalized care plans that address their unique needs and
+                  goals.
                 </p>
               </div>
 
               {/* Team Member 3 */}
               <div className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full bg-gray-100">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
-                    alt="Team Member"
-                    width={200}
-                    height={200}
-                    className="object-cover w-full h-full"
+                    src="/images/kristofer-kirkpatrick.jpg"
+                    alt="Kristofer John Kirkpatrick"
+                    width={192}
+                    height={192}
+                    className="object-cover object-center w-full h-full"
                   />
                 </div>
-                <h3 className="text-xl font-semibold">Jane Doe</h3>
+                <h3 className="text-xl font-semibold">Kristofer John Kirkpatrick </h3>
                 <p className="text-gray-600 mb-2">Care Coordinator</p>
                 <p className="text-gray-500 text-sm max-w-xs mx-auto">
-                  Jane ensures that our clients receive personalized care plans that address their unique needs and
-                  goals.
+                  Kristofer brings a wealth of knowledge in special education and program development to our
+                  organization.
+                </p>
+              </div>
+
+              {/* Team Member 4 */}
+              <div className="text-center">
+                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full bg-gray-100">
+                  <Image
+                    src="/images/vern-clark.jpg"
+                    alt="Vern Clark"
+                    width={192}
+                    height={192}
+                    className="object-cover object-center w-full h-full"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold">Vern Clark</h3>
+                <p className="text-gray-600 mb-2">Registered Nurse</p>
+                <p className="text-gray-500 text-sm max-w-xs mx-auto">
+                  Vern brings extensive nursing experience and clinical expertise to our team, ensuring the highest
+                  quality of care for our clients.
                 </p>
               </div>
             </div>
@@ -237,7 +266,13 @@ export default function AboutUsPage() {
             <div>
               <div className="flex flex-col items-center mb-6">
                 <div className="bg-white p-3 rounded-lg mb-2">
-                  <Image src="/logo.png" alt="Shepherd's Lambs" width={200} height={100} className="w-48 h-auto" />
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Shepherd%27s%20Lambs-ZAqg6BezIJIpZGhRZFjGwed9QBNDSx.png"
+                    alt="Shepherd's Lambs"
+                    width={200}
+                    height={100}
+                    className="w-48 h-auto"
+                  />
                 </div>
               </div>
               <p className="text-gray-300">

@@ -29,7 +29,13 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Shepherd's Lambs" width={160} height={80} className="h-12 w-auto" />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6933bdd4-07b6-4d4d-8946-51a0cef27b6d-XqyqAd0mZ6c5hmJNJAYEXSTp07DbHX.png"
+                alt="Shepherd's Lambs"
+                width={160}
+                height={80}
+                className="h-12 w-auto"
+              />
             </div>
 
             <nav className="hidden md:flex space-x-8">
@@ -75,7 +81,7 @@ export default function BlogPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Latest Updates</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Follow our latest thoughts and updates from Shepherd's Lambs (@) on X.
+            Follow our latest thoughts and updates from Shepherd's Lambs (@shepherds_lambs) on X.
           </p>
         </div>
 
@@ -85,12 +91,12 @@ export default function BlogPage() {
             <div className="w-full max-w-2xl">
               <a
                 className="twitter-timeline"
-                href="https://twitter.com/jack"
+                href="https://x.com/shepherds_lambs"
                 data-height="600"
                 data-theme="light"
                 data-chrome="noheader nofooter noborders transparent"
               >
-                Tweets by @jack
+                {""}
               </a>
             </div>
           </div>
@@ -103,7 +109,7 @@ export default function BlogPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://twitter.com/jack"
+              href="https://x.com/shepherds_lambs"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
@@ -131,7 +137,13 @@ export default function BlogPage() {
             <div>
               <div className="flex flex-col items-center mb-6">
                 <div className="bg-white p-3 rounded-lg mb-2">
-                  <Image src="/logo.png" alt="Shepherd's Lambs" width={200} height={100} className="w-48 h-auto" />
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Shepherd%27s%20Lambs-ZAqg6BezIJIpZGhRZFjGwed9QBNDSx.png"
+                    alt="Shepherd's Lambs"
+                    width={200}
+                    height={100}
+                    className="w-48 h-auto"
+                  />
                 </div>
               </div>
               <p className="text-gray-300">
@@ -186,8 +198,7 @@ export default function BlogPage() {
                 </button>
               </div>
               <p className="text-gray-300 text-sm">
-                Join us to make a difference! Subscribe to our newsletter to stay informed about our humanitarian
-                organization.
+                Join us to make a difference! Subscribe to our newsletter to stay informed about our organization.
               </p>
             </div>
           </div>
