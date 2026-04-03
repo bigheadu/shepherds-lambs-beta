@@ -186,8 +186,8 @@ export default function ContactPage({ searchParams }: { searchParams?: { success
                 
               </div>
               <p className="text-gray-300 mb-4">
-                Shepherd's Lambs is a 501(c)(3) non-profit organization committed to serving youths in southern Orange
-                County. Our staff is educated and experienced in neurodegenerative respite care.
+                Shepherd's Lambs is committed to serving youths in southern Orange County. Our staff is educated and
+                experienced in neurodegenerative respite care.
               </p>
             </div>
 

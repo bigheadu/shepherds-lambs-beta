@@ -2,24 +2,33 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 export default function BlogPage() {
-  useEffect(() => {
-    // Load Twitter widgets script
-    const script = document.createElement("script")
-    script.src = "https://platform.twitter.com/widgets.js"
-    script.async = true
-    script.charset = "utf-8"
-    document.body.appendChild(script)
+  const twitterContainerRef = useRef<HTMLDivElement>(null)
 
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')
-      if (existingScript) {
-        document.body.removeChild(existingScript)
+  useEffect(() => {
+    // Load Twitter widgets script dynamically
+    const loadTwitterWidget = () => {
+      if (typeof window !== "undefined" && twitterContainerRef.current) {
+        // Check if Twitter widgets are already loaded
+        if ((window as typeof window & { twttr?: { widgets?: { load?: () => void } } }).twttr?.widgets?.load) {
+          ;(window as typeof window & { twttr: { widgets: { load: () => void } } }).twttr.widgets.load()
+        } else {
+          const script = document.createElement("script")
+          script.src = "https://platform.twitter.com/widgets.js"
+          script.async = true
+          script.onload = () => {
+            if ((window as typeof window & { twttr?: { widgets?: { load?: () => void } } }).twttr?.widgets?.load) {
+              ;(window as typeof window & { twttr: { widgets: { load: () => void } } }).twttr.widgets.load()
+            }
+          }
+          document.head.appendChild(script)
+        }
       }
     }
+
+    loadTwitterWidget()
   }, [])
 
   return (
@@ -88,7 +97,7 @@ export default function BlogPage() {
         {/* Twitter Embed */}
         <div className="bg-gray-50 rounded-lg p-6 mb-8">
           <div className="flex justify-center">
-            <div className="w-full max-w-2xl">
+            <div className="w-full max-w-2xl" ref={twitterContainerRef}>
               <a
                 className="twitter-timeline"
                 href="https://x.com/shepherds_lambs"
@@ -96,7 +105,7 @@ export default function BlogPage() {
                 data-theme="light"
                 data-chrome="noheader nofooter noborders transparent"
               >
-                {""}
+                Loading tweets...
               </a>
             </div>
           </div>
@@ -147,8 +156,8 @@ export default function BlogPage() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Shepherd's Lambs is a 501(c)(3) non-profit organization committed to serving youths in southern Orange
-                County. Our staff is educated and experienced in neurodegenerative respite care.
+                Shepherd's Lambs is committed to serving youths in southern Orange County. Our staff is educated and
+                experienced in neurodegenerative respite care.
               </p>
             </div>
 
