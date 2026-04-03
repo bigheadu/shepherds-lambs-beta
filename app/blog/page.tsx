@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function BlogPage() {
   const twitterContainerRef = useRef<HTMLDivElement>(null)
@@ -66,11 +67,12 @@ export default function BlogPage() {
             </nav>
 
             <div className="flex items-center space-x-4">
-              <div className="text-right">
+              <div className="text-right hidden sm:block">
                 <div className="text-sm text-gray-600">Phone</div>
                 <div className="font-semibold text-gray-900">(949) 274-5569</div>
               </div>
             </div>
+            <MobileMenu />
           </div>
         </div>
       </header>

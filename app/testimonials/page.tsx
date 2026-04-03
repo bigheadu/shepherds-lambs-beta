@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Star, Quote } from "lucide-react"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function TestimonialsPage() {
   const testimonials = [
@@ -98,11 +99,12 @@ export default function TestimonialsPage() {
             </nav>
 
             <div className="flex items-center space-x-4">
-              <div className="text-right">
+              <div className="text-right hidden sm:block">
                 <div className="text-sm text-gray-600">Phone</div>
                 <div className="font-semibold text-gray-900">(949) 274-5569</div>
               </div>
             </div>
+            <MobileMenu />
           </div>
         </div>
       </header>

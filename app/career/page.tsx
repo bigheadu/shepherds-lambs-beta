@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Sparkles } from "lucide-react"
 import { submitCareerForm } from "@/app/actions/contact"
+import { MobileMenu } from "@/components/mobile-menu"
 
 export default function CareerPage({ searchParams }: { searchParams?: { success?: string } }) {
   return (
@@ -43,11 +44,12 @@ export default function CareerPage({ searchParams }: { searchParams?: { success?
             </nav>
 
             <div className="flex items-center space-x-4">
-              <div className="text-right">
+              <div className="text-right hidden sm:block">
                 <div className="text-sm text-gray-600">Phone</div>
                 <div className="font-semibold text-gray-900">(949) 274-5569</div>
               </div>
             </div>
+            <MobileMenu />
           </div>
         </div>
       </header>
