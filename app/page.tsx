@@ -92,7 +92,7 @@ export default function AboutUsPage() {
         <section className="bg-gray-50 py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About Shepherd's Lambs</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">About Shepherd's Lambs Respite</h1>
               <p className="text-xl text-gray-700 mb-8">
                 We serve youths in southern Orange County. Our staff is educated and experienced in neurodegenerative respite care. Shepherd's Lambs encompasses the Servant Leader mindset; we serve so that your child grows to become wiser, healthier and more autonomous.              
               </p>
